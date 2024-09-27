@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    
+    --main-font: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+input {
+    appearance: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    outline-color: #778beb;
+}
+
+input:empty {
+    appearance: none;
+}
+
+
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: #778beb;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.5);
+}
+
+p{
+    width: clamp(45ch, 80%, 60ch);
+    padding: 1rem 0;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+}
+label{
+    font-family: var(--main-font);
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #2d3436;
+}
+
+label, h3{
+    color:#2d3436;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+}
+
+.side-bar{
+    position: relative;
+}
+
+.side-image{
+    max-height: 100vh;
+    width: auto;
+}
+
+.side-body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: norse-bold;
+    padding: 2rem;
+    width: 100%;
+    background: rgba(0,0, 0,0.6);
+    color: white;
+    top: 7rem;
+    height: 18vh;
+    
+}
+
+.card-header-image{
+    width: auto;
+    height: 100%;
+    object-fit:contain;
+}
+
+.image-credits{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+    color: white;
+}
+
+.image-credits a{
+    color: white;
+    text-decoration: underline;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
+}
+
+.main > section{
+    padding: 2rem;
+}
+
+.main-header-text strong{
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #2d3436;
+}
+
+.main-sign-up-form-header{
+    font-size: 2rem;
+    font-family: var(--main-font);
+}
+
+.main-sign-up-form {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+    
+  }
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 4rem;
+    margin: 2rem 0;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn{
+    background-color: #596D48;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    padding: 0.8rem 4.0rem;
+    transition: background-color 0.3s;
+}
+
+span a {
+    color: #421dc9;
+    text-decoration: underline;
+}
+
+span a:visited{
+    color: #596D48;
+}
